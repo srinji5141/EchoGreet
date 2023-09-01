@@ -12,8 +12,8 @@ void loop() {
     mx = max(mx, val); // Reads in min, max analogue values
   }
 
-  int delta = mx - mn; // Computes delta and checks condition for clap
-  if (delta > 220) { 
+  int delta = mx - mn; 
+  if (delta > 220) { // Computes delta and checks delta condition for clap
     lcd.clear(); // Clears the display  
 
     char* string_to_print = "Hello, World!";
